@@ -1,0 +1,209 @@
+/* ===== LIGHT MODE STYLES ===== */
+
+body.light-mode {
+    background-color: #FFFFFF;
+    color: #1a1a1a;
+}
+
+/* Header em Light Mode */
+body.light-mode header {
+    background-color: transparent;
+    border-bottom: none;
+}
+
+body.light-mode header .logo {
+    color: #000000;
+}
+
+body.light-mode .nav-links a {
+    color: #333333;
+}
+
+body.light-mode .nav-links a:hover {
+    color: #0099FF;
+}
+
+/* Home Section em Light Mode */
+body.light-mode #home {
+    background-color: #FFFFFF;
+}
+
+body.light-mode .hero-title {
+    color: #000000;
+}
+
+body.light-mode .hero-subtitle {
+    color: #555555;
+}
+
+body.light-mode .hero-grid-background,
+body.light-mode .hero-grid-background .grid-image {
+    display: none !important;
+}
+
+/* Reset visual do conteúdo do hero no modo claro */
+body.light-mode .hero-content,
+body.light-mode .container.hero-content {
+    background: transparent !important;
+    padding: 0 24px !important;
+    box-shadow: none !important;
+    color: #1a1a1a !important;
+}
+
+body.light-mode .hero-title { color: #1a1a1a !important; }
+body.light-mode .hero-subtitle { color: #555555 !important; }
+
+/* Profile Picture em Light Mode - Sem círculo/glow */
+body.light-mode .profile-pic {
+    box-shadow: none;
+    animation: none;
+}
+
+/* About Section em Light Mode */
+body.light-mode #about {
+    background-color: #FFFFFF;
+}
+
+body.light-mode .about-content {
+    background: rgba(0, 0, 0, 0.02);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .about-content .hero-title {
+    color: #000000;
+}
+
+body.light-mode .about-content .section-subtitle {
+    color: #0099FF;
+}
+
+body.light-mode .about-content p {
+    color: #333333;
+}
+
+/* Skills Section em Light Mode */
+body.light-mode #skills {
+    background-color: #FFFFFF;
+}
+
+body.light-mode .skills-content .section-title {
+    color: #000000;
+}
+
+body.light-mode .skills-content .section-subtitle {
+    color: #0099FF;
+}
+
+body.light-mode .skill-card {
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .skill-card:hover {
+    background: rgba(0, 191, 255, 0.08);
+    border-color: rgba(0, 191, 255, 0.3);
+}
+
+body.light-mode .skill-name {
+    color: #000000;
+}
+
+/* Projects Section em Light Mode */
+body.light-mode #projects {
+    background-color: #FFFFFF;
+}
+
+body.light-mode .projects-content .section-title {
+    color: #000000;
+}
+
+body.light-mode .projects-content .section-subtitle {
+    color: #0099FF;
+}
+
+body.light-mode .project-card {
+    background: rgba(0, 0, 0, 0.03);
+    border: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .project-card:hover {
+    background: rgba(0, 191, 255, 0.08);
+    border-color: rgba(0, 191, 255, 0.3);
+}
+
+body.light-mode .project-title {
+    color: #000000;
+}
+
+body.light-mode .project-description {
+    color: #555555;
+}
+
+body.light-mode .carousel-button {
+    background: rgba(0, 191, 255, 0.1);
+    border: 2px solid rgba(0, 191, 255, 0.3);
+}
+
+body.light-mode .carousel-button:hover {
+    background: rgba(0, 191, 255, 0.2);
+    border-color: rgba(0, 191, 255, 0.6);
+}
+
+/* Footer em Light Mode */
+body.light-mode footer {
+    background-color: transparent;
+    border-top: none;
+}
+
+body.light-mode .footer-top {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.1);
+}
+
+body.light-mode .footer-title {
+    color: #000000;
+}
+
+body.light-mode .footer-email-link {
+    color: #000000;
+    border: 1px solid rgba(0, 0, 0, 0.3);
+}
+
+body.light-mode .footer-email-link:hover {
+    background: #000000;
+    color: #FFFFFF;
+    border-color: #000000;
+}
+
+body.light-mode .footer-copyright {
+    color: #666666;
+}
+
+body.light-mode .footer-socials .social-icon {
+    color: #000000;
+}
+
+body.light-mode .footer-socials a:hover .social-icon {
+    color: #0099FF;
+}
+
+/* Theme Icon em Light Mode */
+body.light-mode .theme-icon {
+    filter: invert(1) brightness(0.8);
+}
+
+/* Buttons em Light Mode */
+body.light-mode .btn-primary {
+    background: linear-gradient(135deg, #0099FF, #00BFFF);
+    color: #FFFFFF;
+}
+
+body.light-mode .btn-secondary {
+    background: transparent;
+    color: #000000;
+    border: 2px solid rgba(0, 0, 0, 0.3);
+}
+
+body.light-mode .btn-secondary:hover {
+    background: rgba(0, 0, 0, 0.1);
+    border-color: #000000;
+}

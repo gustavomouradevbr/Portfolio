@@ -1,0 +1,72 @@
+/* ===== ESTILOS DO ABOUT ME ===== */
+
+#about {
+    padding: 8rem 0;
+    background-color: #000000;
+}
+.about-content {
+    max-width: 1100px;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 3rem;
+    text-align: center;
+    background: rgba(255,255,255,0.02);
+    border: 1px solid rgba(255,255,255,0.03);
+    border-radius: 12px;
+    box-shadow: 0 8px 30px rgba(2,6,23,0.6);
+}
+
+.about-text-center {
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+}
+.about-content .hero-title {
+    font-size: 2rem;
+    margin-bottom: 0.25rem;
+    color: #FFFFFF;
+}
+.about-content .section-subtitle {
+    display: block;
+    margin-bottom: 1.5rem;
+    color: #6fc8ff;
+    font-weight: 500;
+}
+.about-content p {
+    font-size: 1.05rem;
+    color: #c8d3e6;
+    line-height: 1.8;
+    max-width: 800px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.25rem;
+}
+.about-columns {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 2rem;
+    align-items: start;
+}
+.about-card {
+    padding: 1.25rem;
+    border-radius: 10px;
+    background: rgba(255,255,255,0.01);
+    border: 1px solid rgba(255,255,255,0.02);
+}
+.about-content .btn-secondary {
+    margin-top: 1rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ===== SKILLS SECTION ===== */
+/* Estilos de skills movidos para skills.css */
+@media (min-width: 900px) {
+    .about-columns {
+        grid-template-columns: 1fr 320px;
+    }
+    .about-content { padding: 2.5rem; }
+}
+@media (max-width: 600px) {
+    .about-content { padding: 1.25rem; }
+    .about-content .hero-title { font-size: 1.6rem; }
+}
