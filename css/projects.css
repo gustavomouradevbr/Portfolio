@@ -37,6 +37,8 @@
     margin-bottom: 2rem;
 }
 
+.carousel-container { position: relative; }
+
 .carousel-button {
     width: 50px;
     height: 50px;
@@ -312,4 +314,22 @@
         font-size: 0.8rem;
         padding: 0.4rem 0.8rem;
     }
+}
+
+@media (max-width: 600px) {
+    .carousel-wrapper { max-width: 100%; }
+    .carousel-button {
+        position: absolute;
+        top: 50%;
+        transform: translateY(-50%);
+        width: 42px;
+        height: 42px;
+        opacity: 0.95;
+        z-index: 5;
+    }
+
+    .carousel-button.prev { left: 8px; }
+    .carousel-button.next { right: 8px; }
+
+    .carousel { transition: transform 0.5s ease; }
 }

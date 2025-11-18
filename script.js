@@ -78,6 +78,28 @@
 
       const modalClose = modal.querySelector('.modal-close');
 
+      // Mobile nav toggle
+      const nav = document.querySelector('nav');
+      const navToggle = document.getElementById('nav-toggle');
+      if (navToggle && nav) {
+        navToggle.addEventListener('click', () => {
+          nav.classList.toggle('nav-open');
+        });
+
+        // Close nav when clicking a nav link
+        const navLinks = nav.querySelectorAll('.nav-links a');
+        navLinks.forEach(a => a.addEventListener('click', () => {
+          nav.classList.remove('nav-open');
+        }));
+
+        // Close nav on outside click
+        document.addEventListener('click', (e) => {
+          if (!nav.contains(e.target) && nav.classList.contains('nav-open')) {
+            nav.classList.remove('nav-open');
+          }
+        });
+      }
+
       function openModal() {
         modal.classList.add('show');
         modal.setAttribute('aria-hidden', 'false');
@@ -91,6 +113,19 @@
 
       projectLinks.forEach(link => {
         link.addEventListener('click', (e) => {
+          const href = link.getAttribute('href') || '';
+          // If link is external (different origin) open in new tab normally
+          try {
+            const url = new URL(href, window.location.href);
+            if (url.origin !== window.location.origin) {
+              // Allow opening external links (e.g. Canva) in a new tab
+              window.open(url.href, '_blank', 'noopener');
+              return;
+            }
+          } catch (err) {
+            // If URL parsing fails, fall back to modal
+          }
+
           e.preventDefault();
           openModal();
         });
