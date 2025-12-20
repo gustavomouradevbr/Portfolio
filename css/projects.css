@@ -91,7 +91,7 @@
 
 .project-image {
     width: 100%;
-    height: 250px;
+    height: 340px;
     overflow: hidden;
     background: rgba(0, 191, 255, 0.05);
 }
@@ -101,6 +101,14 @@
     height: 100%;
     object-fit: cover;
     transition: transform 0.3s ease;
+}
+
+.project-image video {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    background: #000000;
+    display: block;
 }
 
 .project-card:hover .project-image img {
@@ -294,7 +302,7 @@
     }
 
     .project-image {
-        height: 200px;
+        height: 240px;
     }
 
     .project-info {
